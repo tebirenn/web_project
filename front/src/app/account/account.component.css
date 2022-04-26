@@ -1,0 +1,98 @@
+
+
+.acc-top-bar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.acc-top-bar span {
+    display: flex;
+    gap: 15px;
+}
+
+.acc-top-bar button {
+    color: #fff;
+    background-color: #306EF7;
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+}
+
+.acc-top-bar h2 { margin: 0; }
+
+.acc-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.acc-info span { 
+    width: 440px;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.acc-info img { width: 20px; }
+
+.acc-info-input {
+    color: #fff; 
+    border: none;
+    background-color: #000;
+    width: 90%;
+    height: 50px;
+}
+
+.acc-info-input:focus { outline: none; }
+
+.acc-info-input::placeholder { color: #fff; }
+
+.acc-info button {
+    color: #fff;
+    background-color: #306EF7;
+    border: none;
+    font-size: 20px;
+    width: 440px;
+    height: 50px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.acc-info h3 { margin: 20px 0; }
+
+.acc-singup-with {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px 0 80px 0;
+}
+
+.acc-singup-with button {
+    color: #fff;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.acc-singup-with img { width: 20px; }
+
+.acc-singup-with p { margin: 0; }
+
+.acc-already a {
+    color: #fff;
+    font-weight: 700;
+}

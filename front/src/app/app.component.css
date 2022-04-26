@@ -1,0 +1,24 @@
+
+
+app-account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+app-home {
+    background-color: #000;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* app-top-bar {
+    background-color: #000;
+    display: flex;
+    height: 100px;
+} */
