@@ -17,8 +17,9 @@ app-home {
     width: 100vw;
 }
 
-/* app-top-bar {
+app-movies {
     background-color: #000;
-    display: flex;
-    height: 100px;
-} */
+    width: 100%;
+    
+}
+
