@@ -6,9 +6,10 @@
         <h4>Our recommendations:</h4>
     </div>
     <div class="all-movies">
-        <div *ngFor="let movie of all_movies">
-            <p class="movie">movie</p>
-            <h6>Name of movie</h6>
+        <div *ngFor="let movie of all_movies" routerLink="/about/:id">
+            <img src="{{ movie.image }}" alt="movie img" class="movie">
+            <!-- <p class="movie">movie</p> -->
+            <h6>{{ movie.name }}</h6>
         </div>
     </div>
 </div>

@@ -7,13 +7,16 @@ import { HomeComponent } from './home/home.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { MoviesComponent } from './movies/movies.component';
 import { MovieDetailsComponent } from './movie-details/movie-details.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
     {path: 'account', component: AccountComponent},
     {path: 'home', component: HomeComponent },
     {path: 'top-bar', component: TopBarComponent},
     {path: 'movies', component: MoviesComponent},
-    {path: '', redirectTo: 'home', pathMatch: 'full'},
+    {path: 'about/:id', component: MovieDetailsComponent},
+    {path: 'login', component: LoginComponent},
+    {path: '', redirectTo: 'account', pathMatch: 'full'},
 ];
 
 @NgModule({
