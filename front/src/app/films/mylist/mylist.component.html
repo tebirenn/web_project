@@ -3,12 +3,11 @@
 
 <div class="list-of-movies">
     <div>
-        <h4>Our recommendations:</h4>
+        <h4>My list of movies:</h4>
     </div>
     <div class="all-movies">
-        <div *ngFor="let movie of all_movies" routerLink="/about/:id">
+        <div *ngFor="let movie of MyList()" [routerLink]="['/mylist', movie.id]">
             <img src="{{ movie.image }}" alt="movie img" class="movie">
-            <!-- <p class="movie">movie</p> -->
             <h6>{{ movie.name }}</h6>
         </div>
     </div>

@@ -1,0 +1,15 @@
+
+<app-top-bar></app-top-bar>
+
+<div class="list-of-movies">
+    <div>
+        <h4>Our recommendations:</h4>
+    </div>
+
+    <div class="all-movies">
+        <div *ngFor="let movie of TVSeries()" [routerLink]="['/tvseries', movie.id]">
+            <img src="{{ movie.image }}" alt="movie img" class="movie">
+            <h6>{{ movie.name }}</h6>
+        </div>
+    </div>
+</div>

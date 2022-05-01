@@ -25,9 +25,16 @@
     gap: 60px;
 }
 
-.nav a {
+.active-ctgr {
     color: #306EF7;
     text-decoration: none;
+    transition: .4s;
+}
+
+.nonactive-ctgr {
+    color: #707070;
+    text-decoration: none;
+    transition: .4s;
 }
 
 .log-out-btn button {
@@ -37,4 +44,10 @@
     height: 30px;
     border-radius: 10px;
     color: #fff;
+    transition: .4s;
+}
+
+.log-out-btn button:hover {
+    color: #306EF7;
+    background-color: #fff;
 }

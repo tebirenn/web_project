@@ -73,6 +73,12 @@
     height: 50px;
     border-radius: 15px;
     margin-top: 30px;
+    transition: .4s;
+}
+
+.acc-info button:hover {
+    color: #306EF7;
+    background-color: #fff;
 }
 
 .acc-info h3 { margin: 20px 0; }
@@ -113,12 +119,18 @@
     width: 100px;
     border: none;
     border-radius: 10px;
+    transition: .4s;
+}
+
+.active:hover {
+    color: #306EF7;
+    background-color: #fff;
 }
 
 .notactive {
-    color: #306EF7;
-    background-color: #000;
-    border: 2px solid #306EF7;
+    color: #707070;
+    background-color: transparent;
+    border: none;
     height: 40px;
     width: 100px;
     border-radius: 10px;
