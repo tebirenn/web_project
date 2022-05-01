@@ -2,14 +2,14 @@
 
 <app-top-bar></app-top-bar>
 
-<div class="details">
+<!-- <div class="details">
     <div class="movies">
         <div class="player">
             <h2>Movies</h2>
             <span class="flash-player"></span>
         </div>
         <div class="about">
-            <h2>Name of the movie</h2>
+            <h2>{{ film.name }}</h2>
             <span>
                 <p>2020</p>
                 <p>2 h. 30 min.</p>
@@ -23,11 +23,43 @@
             </span>
             <div class="description">
                 <h3>About movie</h3>
-                <span></span>
+                <span>
+                    <p>{{ film.description }}</p>
+                </span>
             </div>
         </div>
     </div>
     <div class="rating">
-        7.0
+        {{ film.rating }}
+    </div>
+</div> -->
+
+<div class="about">
+    <h1>{{ film.name }}</h1>
+    <div class="about-movie">
+        <div class="about-left">
+            <img src="{{ film.image }}" alt="movie img">
+            <p><b>Rating:</b> {{ film.rating }}</p>
+            <img src="../../assets/rating.svg" alt="rating">
+        </div>
+        <div class="about-right">
+            <h2 class="about-centered">About movie</h2>
+            <span class="about-centered">
+                <p><b>Data:</b> {{ 2020 }}</p>
+                <p><b>Directed by:</b> {{ 'aboba' }}</p>
+                <p><b>Film company:</b> {{ 'aboba' }}</p>
+            </span>
+            <span class="about-centered">
+                <p><b>Movie duration:</b> {{ 123 }}</p>
+                <p><b>Age rating</b> {{ '18+' }}</p>
+                <p><b>Country:</b> {{ 'Kazakhstan' }}</p>
+            </span>
+            <div class="description">
+                <h3>About description</h3>
+                <span>
+                    <p>{{ film.description }}</p>
+                </span>
+            </div>
+        </div>
     </div>
 </div>

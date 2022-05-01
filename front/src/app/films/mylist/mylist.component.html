@@ -6,7 +6,7 @@
         <h4>My list of movies:</h4>
     </div>
     <div class="all-movies">
-        <div *ngFor="let movie of MyList()" [routerLink]="['/mylist', movie.id]">
+        <div *ngFor="let movie of MyList()" [routerLink]="['/mylist', movie.id]" (click)="Detailing(movie.id, 'My List')">
             <img src="{{ movie.image }}" alt="movie img" class="movie">
             <h6>{{ movie.name }}</h6>
         </div>

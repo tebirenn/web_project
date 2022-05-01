@@ -7,7 +7,7 @@
     </div>
 
     <div class="all-movies">
-        <div *ngFor="let movie of Animes()" [routerLink]="['/animseries', movie.id]">
+        <div *ngFor="let movie of Animes()" [routerLink]="['/animseries', movie.id]" (click)="Detailing(movie.id, 'Animated series')">
             <img src="{{ movie.image }}" alt="movie img" class="movie">
             <h6>{{ movie.name }}</h6>
         </div>
